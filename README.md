@@ -57,12 +57,12 @@ You will need libpcap-devel, libpcrecpp, and libncurses-devel.
 
 On Ubuntu with all packages:
 
-    sudo apt-get install autoconf libpcap-dev libpcre3-dev and lib32ncurses5-dev google-perftools libgoogle-perftools-dev
+    sudo apt-get install autoconf libpcap-dev libpcre3-dev libncurses5-dev:i386 google-perftools libgoogle-perftools-dev
     ./build-eng/autogen.sh
     make
     make check
 
-The memkeys should then be present in /usr/local/bin. 
+Substitute lib32ncurses5-dev for libncurses5-dev:i386 on 32-bit machines. 
 
 memkeys was developed on CentOS 5.8 with the following software tools:
 
